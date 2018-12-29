@@ -22,6 +22,7 @@ pipeline {
                 }
 
                 timeout(time:3, unit: 'MINUTES'){
+                    sh './health-check.sh'
                 }
             }
         }
